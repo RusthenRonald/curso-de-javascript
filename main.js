@@ -17,3 +17,5 @@ const sortedName = names.sort();
 const namesIsArray = Array.isArray(names);
 
 console.log(namesIsArray);
+
+console.log(sortedName);
