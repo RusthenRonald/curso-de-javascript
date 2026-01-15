@@ -1,21 +1,30 @@
-const names = ['Rusthen', 'João', 'julia',10,true];
+const numbers = [1,2,3,4,5];
 
-//add to the end
-names.push('Pedro');
+//map
+//map just modifies the own array
+const numberByTwo = numbers.map(
+    function(number){
+        return number * 2;
+ }
+)
 
-//Add to the beginning
-names.unshift('Primeiro');
+//filter
+//filter creates a new array
+const ages = [8, 13, 27, 30, 22, 40];
 
-//Remove from the end
-names.pop();
 
-//Rename an item
-names[3] = 'Pascoal';
+const EvenAges = ages.filter(
+    function(age){
+      return age % 2 === 0
+    }
+)
 
-const sortedName = names.sort();
+//Reduce
+//It iterates through an array and transforms everything into a single value.
+const sumOfAges = ages.reduce(
+    function(age,acumulator){
+        return acumulator + age;
+    },0
+)
 
-const namesIsArray = Array.isArray(names);
-
-console.log(namesIsArray);
-
-console.log(sortedName);
+console.log(sumOfAges)
