@@ -15,12 +15,8 @@ const todos = [
         isCompleted: true
     }
 ]
-//text format
-//Sending and receiving data between systems
-const todosJSON = JSON.stringify(todos)
+//How do I access objects inside a list?
 
-//Transforming Json to a list
-const todosList = JSON.parse(todosJSON)
+const descriptionOfLastTodo = todos[2].description
 
-console.log(todosJSON)
-console.log(todosList)
+console.log(descriptionOfLastTodo)
