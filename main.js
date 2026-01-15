@@ -1,30 +1,22 @@
-const numbers = [1,2,3,4,5];
-
-//map
-//map just modifies the own array
-const numberByTwo = numbers.map(
-    function(number){
-        return number * 2;
- }
-)
-
-//filter
-//filter creates a new array
-const ages = [8, 13, 27, 30, 22, 40];
-
-
-const EvenAges = ages.filter(
-    function(age){
-      return age % 2 === 0
+const todos = [
+    {
+        id: '1',
+        description: 'Estudar programação',
+        isCompleted: false
+    },
+    {
+        id: '2',
+        description: 'Ler',
+        isCompleted: true
+    },
+    {
+        id: '3',
+        description: 'Treinar',
+        isCompleted: true
     }
-)
+]
+//How do I access objects inside a list?
 
-//Reduce
-//It iterates through an array and transforms everything into a single value.
-const sumOfAges = ages.reduce(
-    function(age,acumulator){
-        return acumulator + age;
-    },0
-)
+const descriptionOfLastTodo = todos[2].description
 
-console.log(sumOfAges)
+console.log(descriptionOfLastTodo)
