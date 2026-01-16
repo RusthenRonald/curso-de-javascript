@@ -1,26 +1,13 @@
-const todos = [
-    {
-        id: '1',
-        description: 'Estudar programação',
-        isCompleted: false
-    },
-    {
-        id: '2',
-        description: 'Ler',
-        isCompleted: true
-    },
-    {
-        id: '3',
-        description: 'Treinar',
-        isCompleted: true
-    }
-]
-//text format
-//Sending and receiving data between systems
-const todosJSON = JSON.stringify(todos)
+let index = 0
+while (index<10) {
+    console.log(`Index é menor do que 10!`)
+    index+=1
+    //index =index +1
+    //index++
+}
 
-//Transforming Json to a list
-const todosList = JSON.parse(todosJSON)
+const person = {
+    name: 'Jane',
+    age: 21
+}
 
-console.log(todosJSON)
-console.log(todosList)
